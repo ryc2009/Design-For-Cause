@@ -533,11 +533,11 @@ ul {
 .about-main {
   width: min(1280px, calc(100% - 96px));
   margin: 0 auto;
-  padding-top: 128px;
+  padding-top: 48px;
   padding-bottom: 96px;
 }
 
-.about-hero {
+/*.about-hero {
   min-height: 614px;
   padding: 48px;
   display: grid;
@@ -602,7 +602,7 @@ ul {
 .about-hero-image:hover {
   box-shadow: 4px 4px 0 #ad3300;
 }
-
+*/
 
 .leadership-section {
   margin-top: 80px;
@@ -884,7 +884,7 @@ ul {
 
 .volunteer-hero {
   padding-top: 32px;
-  margin-bottom: 96px;
+  margin-bottom: 72px;
   display: grid;
   grid-template-columns: 2fr 1fr;
   align-items: end;
@@ -902,56 +902,6 @@ ul {
 .volunteer-intro p {
   max-width: 672px;
   color: #45464d;
-}
-
-.impact-tracker {
-  width: 100%;
-  max-width: 384px;
-  justify-self: end;
-  padding: 24px;
-  background: #e0e3e5;
-  border: 1px solid rgba(198, 198, 205, 0.2);
-  border-radius: 2px;
-}
-
-.impact-tracker h2 {
-  margin-bottom: 8px;
-  color: #000000;
-  font-size: 24px;
-}
-
-.tracker-number-row {
-  margin-bottom: 16px;
-  display: flex;
-  align-items: end;
-  gap: 8px;
-}
-
-.tracker-number {
-  color: #ad3300;
-  font-size: 48px;
-  line-height: 1;
-  font-weight: 800;
-}
-
-.tracker-label {
-  padding-bottom: 4px;
-  color: #45464d;
-  font-family: "JetBrains Mono", monospace;
-  font-size: 12px;
-}
-
-.tracker-bar {
-  height: 8px;
-  overflow: hidden;
-  background: #d8dadc;
-  border-radius: 999px;
-}
-
-.tracker-fill {
-  width: 65%;
-  height: 100%;
-  background: #009668;
 }
 
 .volunteer-directory {
@@ -1217,8 +1167,7 @@ ul {
 
   .hero-container,
   .featured-projects-grid,
-  .about-hero,
-  .metrics-grid,
+  /*.about-hero,*/
   .leadership-grid,
   .portfolio-grid,
   .volunteer-hero,
@@ -1231,7 +1180,7 @@ ul {
   }
 
   .hero-content h1,
-  .about-hero h1,
+  /*.about-hero h1,*/
   .portfolio-hero h1,
   .volunteer-intro h1 {
     font-size: 38px;
@@ -1260,11 +1209,14 @@ ul {
     padding-top: 104px;
   }
 
+  /*
   .about-hero {
     min-height: auto;
     padding: 24px;
   }
+  */
 
+  /*
   .about-hero-content {
     padding-left: 16px;
   }
@@ -1272,7 +1224,7 @@ ul {
   .about-hero-image-wrap {
     height: 360px;
   }
-
+*/
   .leadership-section {
     padding: 24px;
   }
@@ -1338,7 +1290,7 @@ ul {
   }
 
   .hero-content h1,
-  .about-hero h1,
+  /*.about-hero h1,*/
   .portfolio-hero h1,
   .volunteer-intro h1 {
     font-size: 32px;
