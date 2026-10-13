@@ -1,5 +1,5 @@
 ---
-name: Mission Driven
+name: Design For Cause
 colors:
   surface: '#f7f9fb'
   surface-dim: '#d8dadc'
