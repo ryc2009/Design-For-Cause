@@ -24,7 +24,7 @@
   <header class="site-header">
     <div class="header-container">
 
-      <a class="site-logo" href="contact.html">
+      <a class="site-logo" href="index.html">
         Design For Cause
       </a>
 
@@ -35,11 +35,25 @@
         <a class="nav-link active" href="contact.html">Contact Us</a>
     </nav>
 
-      <button class="mobile-menu-button" type="button">
-        <span class="material-symbols-outlined">menu</span>
-      </button>
+        <button
+            class="mobile-menu-button"
+            type="button"
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+            aria-controls="mobile-nav"
+        >
+            <span class="material-symbols-outlined">menu</span>
+        </button>
 
     </div>
+
+    <nav class="mobile-nav" id="mobile-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+
   </header>
 
 
@@ -272,3 +286,30 @@
     }
   });
 </script>
+
+
+<script>
+  const menuButton = document.querySelector(".mobile-menu-button");
+  const mobileNav = document.querySelector("#mobile-nav");
+  const menuIcon = menuButton.querySelector(".material-symbols-outlined");
+
+  menuButton.addEventListener("click", function() {
+    const isOpen = mobileNav.classList.toggle("open");
+
+    menuButton.setAttribute("aria-expanded", String(isOpen));
+    menuIcon.textContent = isOpen ? "close" : "menu";
+  });
+
+  mobileNav.querySelectorAll("a").forEach(function(link) {
+    link.addEventListener("click", function() {
+      mobileNav.classList.remove("open");
+      menuButton.setAttribute("aria-expanded", "false");
+      menuIcon.textContent = "menu";
+    });
+  });
+</script>
+
+<script src="animations.js"></script>
+
+</body>
+</html>
